@@ -1,4 +1,6 @@
 import AboutMe from "@/sections/AboutMe";
+import Contact from "@/sections/Contact";
+import Footer from "@/sections/Footer";
 import Header from "@/sections/Header";
 import Hero from "@/sections/Hero";
 
@@ -6,10 +8,12 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="flex flex-col items-center">
+      <main className="flex flex-col items-center space-y-30">
         <Hero />
         <AboutMe />
+        <Contact />
       </main>
+      <Footer />
     </>
   );
 }

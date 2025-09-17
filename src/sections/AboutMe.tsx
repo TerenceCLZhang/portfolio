@@ -1,15 +1,15 @@
 import TechStack from "@/components/TechStack";
 import Interests from "@/components/Interests";
+import SectionHead from "@/components/SectionHead";
 
 const AboutMe = () => {
   return (
-    <section className="container">
-      <div className="flex items-center justify-center flex-col space-y-3 text-center">
-        <h3>About Me</h3>
-        <p className="text-gray-300">
-          Discover who I am, what I build, and the passion that drives my work.
-        </p>
-      </div>
+    <section className="container" id="about-me">
+      <SectionHead
+        title="About Me"
+        heading="Who am I"
+        description="Discover who I am, what I build, and the passion that drives my work."
+      />
       <div>
         <TechStack />
         <Interests />

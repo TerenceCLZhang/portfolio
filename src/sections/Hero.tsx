@@ -4,7 +4,10 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="py-32 md:py-40 container text-center flex flex-col items-center space-y-10">
+    <section
+      className="pt-32 md:pt-40 container text-center flex flex-col items-center space-y-10"
+      id="hero"
+    >
       <Image
         src="/hero.png"
         alt="Man with glasses typing on a laptop"
@@ -24,10 +27,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex flex-col space-y-3 md:flex-row md:space-y-0 md:space-x-7">
-        <Button
-          asChild
-          className="border border-gray-400 hover:text-black hover:bg-gray-100"
-        >
+        <Button asChild>
           <Link href="#">Expore my Work ⬇️</Link>
         </Button>
         <Button asChild variant="secondary">

@@ -12,6 +12,7 @@ const interests = [
   { emoji: "🚀", label: "Space", top: 0, left: 0 },
   { emoji: "⛰️", label: "Nature", top: 0, left: 0 },
   { emoji: "📖", label: "Reading", top: 0, left: 0 },
+  { emoji: "♟️", label: "Chess", top: 0, left: 0 },
 ];
 
 const InterestsDragDrop = () => {

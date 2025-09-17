@@ -5,7 +5,7 @@ const Interests = () => {
   return (
     <AboutMeCard
       title="Beyond Code"
-      description="Learn more about my interests and hobbies!"
+      description="Learn more about my interests and hobbies."
       content={() => <InterestsDragDrop />}
     />
   );
