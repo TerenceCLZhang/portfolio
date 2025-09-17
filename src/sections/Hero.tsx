@@ -16,7 +16,9 @@ const Hero = () => {
         className="mx-auto"
       />
       <div className="space-y-5">
-        <h2>Transforming concepts into seamless web experiences</h2>
+        <h2 className="gradient-1">
+          Transforming concepts into seamless web experiences
+        </h2>
         <div className="text-gray-300">
           <p className="max-w-4xl mx-auto">
             I'm <b>Terence Zhang</b>, a full-stack web developer based in
@@ -27,11 +29,11 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex flex-col space-y-3 md:flex-row md:space-y-0 md:space-x-7">
-        <Button asChild>
-          <Link href="#">Expore my Work ⬇️</Link>
+        <Button asChild className="gradient-3 font-semibold hover:opacity-80">
+          <Link href="#projects">Expore my Work ⬇️</Link>
         </Button>
         <Button asChild variant="secondary">
-          <Link href="#">👋 Get in Touch</Link>
+          <Link href="#contact">👋 Get in Touch</Link>
         </Button>
       </div>
     </section>

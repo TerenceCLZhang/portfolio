@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="flex flex-col items-center space-y-30">
+      <main className="flex flex-col items-center">
         <Hero />
         <AboutMe />
         <Contact />

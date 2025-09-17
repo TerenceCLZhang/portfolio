@@ -12,7 +12,7 @@ const SectionHead = ({
       <span className="uppercase text-gray-400 font-semibold tracking-[0.65rem]">
         {title}
       </span>
-      <h3>{heading}</h3>
+      <h3 className="gradient-2">{heading}</h3>
       <p className="text-gray-300">{description}</p>
     </div>
   );

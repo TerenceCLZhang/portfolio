@@ -14,6 +14,10 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import {
+  GoogleReCaptchaProvider,
+  useGoogleReCaptcha,
+} from "react-google-recaptcha-v3";
 
 const formSchema = z.object({
   name: z.string().min(1, { message: "Required" }),
@@ -35,6 +39,8 @@ const ContactForm = () => {
       message: "",
     },
   });
+
+  const { executeRecaptcha } = useGoogleReCaptcha();
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     try {
@@ -59,7 +65,7 @@ const ContactForm = () => {
               <FormControl>
                 <Input
                   type="text"
-                  className="h-13 md:text-base placeholder:text-base"
+                  className="h-13 md:text-base placeholder:text-base bg-gray-800 border-3 border-gray-600"
                   placeholder="Enter your full name"
                   {...field}
                 />
@@ -79,7 +85,7 @@ const ContactForm = () => {
               <FormControl>
                 <Input
                   type="text"
-                  className="h-13 md:text-base placeholder:text-base"
+                  className="h-13 md:text-base placeholder:text-base bg-gray-800 border-3 border-gray-600"
                   placeholder="Enter your email address"
                   inputMode="email"
                   {...field}
@@ -99,7 +105,7 @@ const ContactForm = () => {
               <FormLabel className="text-base">Message *</FormLabel>
               <FormControl>
                 <Textarea
-                  className=" h-50 max-h-100 md:text-base placeholder:text-base"
+                  className=" h-50 max-h-100 md:text-base placeholder:text-base bg-gray-800 border-3 border-gray-600"
                   placeholder="Enter your message"
                   {...field}
                 />
@@ -109,7 +115,10 @@ const ContactForm = () => {
             </FormItem>
           )}
         />
-        <Button type="submit" className="text-base">
+        <Button
+          type="submit"
+          className="text-base tracking-widest gradient-3 hover:opacity-80"
+        >
           Submit
         </Button>
       </form>

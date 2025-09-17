@@ -3,7 +3,7 @@ import SectionHead from "@/components/SectionHead";
 
 const Contact = () => {
   return (
-    <section className="container" id="contact">
+    <section className="container py-5" id="contact">
       <SectionHead
         title="Contact"
         heading="Let's Work Together"
