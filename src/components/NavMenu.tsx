@@ -12,6 +12,13 @@ const NavMenu = () => {
       <NavigationMenuList className="flex space-x-1">
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
+            <Link href="#top" className="nav-item">
+              Home
+            </Link>
+          </NavigationMenuLink>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuLink asChild>
             <Link href="#about-me" className="nav-item">
               About Me
             </Link>

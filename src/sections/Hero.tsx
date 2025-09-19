@@ -5,8 +5,8 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <section
-      className="pt-32 md:pt-40 container text-center flex flex-col items-center space-y-10"
-      id="hero"
+      className="pt-32 md:pt-40 container text-center flex flex-col items-center space-y-3 max-w-5xl"
+      id="top"
     >
       <Image
         src="/hero.png"
@@ -15,6 +15,10 @@ const Hero = () => {
         height={300}
         className="mx-auto"
       />
+      <div className="bg-gray-800 py-3 px-5 rounded-4xl flex items-center space-x-3">
+        <div className="h-5 w-5 bg-green-500 rounded-full [box-shadow:0px_0px_20px_#00ff26] animate-pulse"></div>
+        <p className="text-sm">Open to New Opportunities</p>
+      </div>
       <div className="space-y-5">
         <h2 className="gradient-1">
           Transforming concepts into seamless web experiences
@@ -28,11 +32,11 @@ const Hero = () => {
           <b>Let's discuss your next project!</b>
         </div>
       </div>
-      <div className="flex flex-col space-y-3 md:flex-row md:space-y-0 md:space-x-7">
-        <Button asChild className="gradient-3 font-semibold hover:opacity-80">
+      <div className="flex flex-col space-y-3 md:flex-row md:space-y-0 mt-5 md:space-x-7">
+        <Button asChild size="lg">
           <Link href="#projects">Expore my Work ⬇️</Link>
         </Button>
-        <Button asChild variant="secondary">
+        <Button asChild variant="secondary" size="lg">
           <Link href="#contact">👋 Get in Touch</Link>
         </Button>
       </div>

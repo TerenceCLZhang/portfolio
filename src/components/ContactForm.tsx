@@ -14,10 +14,6 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import {
-  GoogleReCaptchaProvider,
-  useGoogleReCaptcha,
-} from "react-google-recaptcha-v3";
 
 const formSchema = z.object({
   name: z.string().min(1, { message: "Required" }),
@@ -40,15 +36,13 @@ const ContactForm = () => {
     },
   });
 
-  const { executeRecaptcha } = useGoogleReCaptcha();
-
-  function onSubmit(values: z.infer<typeof formSchema>) {
+  const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
       console.log("Success!");
     } catch (error) {
       console.error("Form submission error", error);
     }
-  }
+  };
 
   return (
     <Form {...form}>
@@ -115,10 +109,7 @@ const ContactForm = () => {
             </FormItem>
           )}
         />
-        <Button
-          type="submit"
-          className="text-base tracking-widest gradient-3 hover:opacity-80"
-        >
+        <Button type="submit" className="text-base tracking-widest" size="lg">
           Submit
         </Button>
       </form>

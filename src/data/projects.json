@@ -1,0 +1,60 @@
+[
+  {
+    "emoji": "🌍",
+    "title": "Where in the World?",
+    "image": "/projects/where_in_the_world.png",
+    "techStack": [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "React Router",
+      "Framer Motion"
+    ],
+    "description": [
+      "Search and filter by name or region, with sorting options for name and population",
+      "Explore detailed country information, including population, capital, currencies, languages, and border countries/territories",
+      "Interactive features with map links and a responsive design with dark mode support"
+    ],
+    "githubLink": "https://github.com/TerenceCLZhang/rest-countries-api-web-app",
+    "liveLink": "https://terenceclzhang-rest-countries.netlify.app/"
+  },
+  {
+    "emoji": "📍",
+    "title": "IP Address Tracker",
+    "image": "/projects/ip_address_tracker.png",
+    "techStack": ["React", "TypeScript", "Tailwind CSS", "Redux", "Leaflet"],
+    "description": [
+      "Search for any valid IPv4 or IPv6 address",
+      "Access detauked information including location, timezone, and ISP",
+      "View its location on an interactive map integrated with Leaflet and Google Maps"
+    ],
+    "githubLink": "https://github.com/TerenceCLZhang/ip-address-tracker",
+    "liveLink": "https://terenceclzhang-github-user-finder.netlify.app/"
+  },
+  {
+    "emoji": "⛅",
+    "title": "GlobeWeather",
+    "image": "/projects/globeweather.png",
+    "techStack": ["React", "TypeScript", "Tailwind CSS", "Redux"],
+    "description": [
+      "Search any city worldwide with autocomplete suggestions",
+      "Contains real-time weather data including temperature, wind speed, and humidity, provided by the OpenWeather API",
+      "Dynamic backgrounds and unit toggle for metric/imperial measurements"
+    ],
+    "githubLink": "https://github.com/TerenceCLZhang/GlobeWeather",
+    "liveLink": "https://terenceclzhang-globeweather.netlify.app/"
+  },
+  {
+    "emoji": "👦",
+    "title": "GitHub User Finder",
+    "image": "/projects/github_user_finder.png",
+    "techStack": ["HTML", "CSS", "JavaScript", "GitHub API"],
+    "description": [
+      "Search for any GitHub by username",
+      "View GitHub user details including name, location, join date, followers/following count, number of repositories, and links.",
+      "Browse the user’s latest repositories, sorted by recent activity"
+    ],
+    "githubLink": "https://github.com/TerenceCLZhang/github-user-finder",
+    "liveLink": "https://terenceclzhang-github-user-finder.netlify.app/"
+  }
+]
