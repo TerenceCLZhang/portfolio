@@ -34,6 +34,7 @@ const MainAboutMeCard = () => {
   return (
     <AboutCard
       title="👤 Terence Zhang"
+      direction="left"
       content={() => (
         <div className="text-justify">
           <Image
@@ -69,7 +70,9 @@ const MainAboutMeCard = () => {
 const Socials = () => {
   return (
     <AboutCard
-      title="⛓️‍💥 Reach Out & Connect"
+      title="⛓️‍💥 Find Me Online"
+      description="Links to my professional network, open-source work, and CV / Résumé"
+      direction="left"
       content={() => (
         <div className="flex flex-col w-full space-y-3 md:flex-row md:space-y-0 md:justify-evenly">
           <Button asChild size="lg">
@@ -107,14 +110,21 @@ const Socials = () => {
 
 const TechStack = () => {
   return (
-    <AboutCard title="🔧 My Toolbox" content={() => <TechStackDragDrop />} />
+    <AboutCard
+      title="🔧 My Toolbox"
+      description="Explore the languages, frameworks, and tools I rely on to build my projects."
+      direction="right"
+      content={() => <TechStackDragDrop />}
+    />
   );
 };
 
 const Interests = () => {
   return (
     <AboutCard
-      title="🧩 My Interests Beyond Code"
+      title="🧩 Beyond Code"
+      description="Learn more about my interests and hobbies beyond programming."
+      direction="right"
       content={() => <InterestsCarousel />}
     />
   );

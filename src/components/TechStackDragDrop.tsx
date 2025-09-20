@@ -10,7 +10,7 @@ const TechStackDragDrop = () => {
 
   return (
     <div
-      className="md:h-75 flex flex-wrap gap-3 items-center justify-center"
+      className="md:h-85 flex flex-wrap gap-3 items-center justify-center"
       ref={dragDropContainer}
     >
       {tech.map((item, index) => (

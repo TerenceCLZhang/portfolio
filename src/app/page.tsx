@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="flex flex-col items-center flex-grow">
+      <main className="flex flex-col items-center flex-grow section-padding">
         <Hero />
         <AboutMe />
         <Projects />

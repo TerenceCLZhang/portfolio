@@ -1,12 +1,20 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import * as motion from "motion/react-client";
+import { slideLeftVariants } from "@/utils/variants";
 
 const Hero = () => {
   return (
-    <section
+    <motion.section
       className="pt-32 md:pt-40 container text-center flex flex-col items-center space-y-3 max-w-5xl"
-      id="top"
+      id="home"
+      variants={slideLeftVariants}
+      initial="initial"
+      whileInView="animate"
+      viewport={{
+        once: true,
+      }}
     >
       <Image
         src="/hero.png"
@@ -20,8 +28,11 @@ const Hero = () => {
         <p className="text-sm">Open to New Opportunities</p>
       </div>
       <div className="space-y-5">
-        <h2 className="gradient-1">
-          Transforming concepts into seamless web experiences
+        <h2 className="text-gray-300">
+          Transforming concepts into seamless{" "}
+          <span className="gradient-1 bg-clip-text text-transparent italic">
+            web experiences
+          </span>
         </h2>
         <div className="text-gray-300">
           <p className="max-w-4xl mx-auto">
@@ -40,7 +51,7 @@ const Hero = () => {
           <Link href="#contact">👋 Get in Touch</Link>
         </Button>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

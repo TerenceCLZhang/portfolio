@@ -13,7 +13,7 @@ const Projects = () => {
       <div className="py-10 w-full flex flex-wrap justify-center gap-5">
         {projects.map((project, index) => (
           <div key={index} className="flex-1 lg:min-w-[400px] max-w-[500px]">
-            <ProjectCard project={project} />
+            <ProjectCard project={project} index={index} />
           </div>
         ))}
       </div>

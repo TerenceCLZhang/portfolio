@@ -1,3 +1,6 @@
+import { slideLeftVariants } from "@/utils/variants";
+import * as motion from "motion/react-client";
+
 const SectionHead = ({
   title,
   heading,
@@ -8,13 +11,21 @@ const SectionHead = ({
   description: string;
 }) => {
   return (
-    <div className="flex items-center justify-center flex-col space-y-3 text-center">
+    <motion.div
+      className="flex items-center justify-center flex-col space-y-3 text-center"
+      variants={slideLeftVariants}
+      initial="initial"
+      whileInView="animate"
+      viewport={{
+        once: true,
+      }}
+    >
       <span className="uppercase text-gray-400 font-semibold tracking-[0.65rem]">
         {title}
       </span>
       <h3 className="gradient-2">{heading}</h3>
-      <p className="text-gray-300">{description}</p>
-    </div>
+      <p>{description}</p>
+    </motion.div>
   );
 };
 

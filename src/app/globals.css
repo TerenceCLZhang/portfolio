@@ -117,12 +117,12 @@
     @apply border-border outline-ring/50;
   }
 
-  body {
-    @apply bg-background text-foreground;
+  html {
+    @apply scroll-smooth overflow-x-hidden;
   }
 
-  html {
-    @apply scroll-smooth;
+  body {
+    @apply bg-background text-foreground overflow-x-hidden relative;
   }
 
   h1,
@@ -153,8 +153,12 @@
 }
 
 @layer components {
+  .section-padding {
+    @apply px-5 md:px-20;
+  }
+
   .nav-item {
-    @apply px-2 py-0.5 text-white/70 text-sm font-semibold rounded-full hover:bg-white/10 hover:text-white transition duration-300;
+    @apply px-2 py-0.5 text-white/70 text-base font-semibold rounded-full hover:bg-white/10 hover:text-white transition duration-300;
   }
 
   .gradient-1 {

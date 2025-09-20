@@ -1,0 +1,30 @@
+import { Variants, Transition } from "motion/react";
+
+const slideTransition: Transition = {
+  duration: 1.5,
+  ease: "easeInOut",
+};
+
+export const slideLeftVariants: Variants = {
+  initial: {
+    x: "-100%",
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: slideTransition,
+  },
+};
+
+export const slideRightVariants: Variants = {
+  initial: {
+    x: "100%",
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: slideTransition,
+  },
+};

@@ -31,7 +31,7 @@ const InterestsCarousel = () => {
     >
       <Button
         onClick={() => api?.scrollPrev()}
-        className="bg-transparent text-gray-300 hover:text-white hover:bg-transparent hover:scale-200"
+        className="bg-transparent hover:text-white hover:bg-transparent hover:scale-200"
         aria-label="Previous"
       >
         <ChevronLeft />
@@ -49,7 +49,7 @@ const InterestsCarousel = () => {
       </CarouselContent>
       <Button
         onClick={() => api?.scrollNext()}
-        className="bg-transparent text-gray-300 hover:text-white hover:bg-transparent hover:scale-200"
+        className="bg-transparent hover:text-white hover:bg-transparent hover:scale-200"
         aria-label="Next"
       >
         <ChevronRight />
