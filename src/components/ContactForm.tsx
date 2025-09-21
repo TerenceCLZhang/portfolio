@@ -14,8 +14,11 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import toast, { LoaderIcon } from "react-hot-toast";
+import axios from "axios";
+import { useState } from "react";
 
-const formSchema = z.object({
+export const formSchema = z.object({
   name: z.string().min(1, { message: "Required" }),
   email: z
     .string()
@@ -36,11 +39,35 @@ const ContactForm = () => {
     },
   });
 
+  const [submitting, setSubmitting] = useState(false);
+
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
+    setSubmitting(true);
     try {
-      console.log("Success!");
+      await axios.post("/api/email", values, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      toast.success("Your message was sent successfully!");
+      form.reset();
     } catch (error) {
-      console.error("Form submission error", error);
+      if (axios.isAxiosError(error)) {
+        console.error(
+          "Email sending failed:",
+          error.response?.data || error.message
+        );
+        toast.error(
+          error.response?.data?.message ||
+            "Error sending email. Please try again later."
+        );
+      } else {
+        console.error("Unexpected error:", error);
+        toast.error("Something went wrong. Please try again.");
+      }
+    } finally {
+      setSubmitting(false);
     }
   };
 
@@ -49,6 +76,7 @@ const ContactForm = () => {
       <form
         onSubmit={form.handleSubmit(onSubmit)}
         className="space-y-8 max-w-5xl mx-auto py-10"
+        aria-busy={submitting}
       >
         <FormField
           control={form.control}
@@ -61,6 +89,7 @@ const ContactForm = () => {
                   type="text"
                   className="h-13 md:text-base placeholder:text-base bg-gray-800 border-3 border-gray-600"
                   placeholder="Enter your full name"
+                  disabled={submitting}
                   {...field}
                 />
               </FormControl>
@@ -82,6 +111,7 @@ const ContactForm = () => {
                   className="h-13 md:text-base placeholder:text-base bg-gray-800 border-3 border-gray-600"
                   placeholder="Enter your email address"
                   inputMode="email"
+                  disabled={submitting}
                   {...field}
                 />
               </FormControl>
@@ -101,6 +131,7 @@ const ContactForm = () => {
                 <Textarea
                   className=" h-50 max-h-100 md:text-base placeholder:text-base bg-gray-800 border-3 border-gray-600"
                   placeholder="Enter your message"
+                  disabled={submitting}
                   {...field}
                 />
               </FormControl>
@@ -109,8 +140,20 @@ const ContactForm = () => {
             </FormItem>
           )}
         />
-        <Button type="submit" className="text-base tracking-widest" size="lg">
-          Submit
+        <Button
+          type="submit"
+          className="text-base tracking-widest hover:scale-110 active:scale-95"
+          size="lg"
+          disabled={submitting}
+        >
+          {submitting ? (
+            <>
+              <LoaderIcon />
+              Submitting
+            </>
+          ) : (
+            "Submit"
+          )}
         </Button>
       </form>
     </Form>

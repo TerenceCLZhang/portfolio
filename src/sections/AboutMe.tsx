@@ -2,10 +2,10 @@ import SectionHead from "@/components/SectionHead";
 import TechStackDragDrop from "@/components/TechStackDragDrop";
 import InterestsCarousel from "@/components/InterestsCarousel";
 import Image from "next/image";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { File, Github, Linkedin } from "lucide-react";
 import { AboutCard } from "@/components/SectionCards";
+import { ButtonLink } from "@/components/CustomButtons";
+import Link from "next/link";
 
 const AboutMe = () => {
   return (
@@ -46,14 +46,22 @@ const MainAboutMeCard = () => {
           />
           <div className="space-y-5">
             <p>
-              I am a 2025 University of Auckland graduate with a BSc. (Honours)
-              in Computer Science with <b>First Class Honours</b>. Passionate
-              about problem-solving and software development, I bring a solid
-              foundation in algorithms, data structures, and software
-              engineering. My research experience has honed my analytical
-              thinking and attention to detail. I thrive in collaborative
-              environments and aim to build{" "}
-              <b>innovative, reliable, and impactful solutions</b>.
+              I am a 2025 University of Auckland graduate with a{" "}
+              <b>BSc. (Honours) in Computer Science with First Class Honours</b>
+              . Passionate about problem-solving and software development, I
+              bring a solid foundation in algorithms, data structures, and
+              software engineering. My research experience has honed my
+              analytical thinking and attention to detail. I thrive in
+              collaborative environments and aim to build{" "}
+              <b>innovative, reliable, and impactful solutions</b>. Learn more
+              about my{" "}
+              <Link
+                href="/academics"
+                className="font-bold text-purple-400 drop-shadow-sm hover:text-white underline decoration-3 underline-offset-5 decoration-dashed"
+              >
+                academic journey here
+              </Link>
+              .
             </p>
             <p>
               I primarily work with <b>React</b>, <b>Next.js</b>,{" "}
@@ -75,33 +83,24 @@ const Socials = () => {
       direction="left"
       content={() => (
         <div className="flex flex-col w-full space-y-3 md:flex-row md:space-y-0 md:justify-evenly">
-          <Button asChild size="lg">
-            <Link
-              href="https://www.linkedin.com/in/terence-chun-lin-zhang/"
-              target="_blank"
-              aria-label="Visit Terence Zhang's LinkedIn profile"
-            >
-              <Linkedin /> LinkedIn
-            </Link>
-          </Button>
-          <Button asChild size="lg">
-            <Link
-              href="https://github.com/TerenceCLZhang"
-              target="_blank"
-              aria-label="Visit Terence Zhang's GitHub profile"
-            >
-              <Github /> GitHub
-            </Link>
-          </Button>
-          <Button asChild size="lg">
-            <Link
-              href="/TerenceZhangCV.pdf"
-              target="_blank"
-              aria-label="View Terence Zhang's CV"
-            >
-              <File /> CV / Résumé
-            </Link>
-          </Button>
+          <ButtonLink
+            content="LinkedIn"
+            link="https://www.linkedin.com/in/terence-chun-lin-zhang/"
+            icon={<Linkedin />}
+            newTab={true}
+          />
+          <ButtonLink
+            content="GitHub"
+            link="https://github.com/TerenceCLZhang"
+            icon={<Github />}
+            newTab={true}
+          />
+          <ButtonLink
+            content="CV / Résumé"
+            link="/TerenceZhangCV.pdf"
+            icon={<File />}
+            newTab={true}
+          />
         </div>
       )}
     />

@@ -1,8 +1,7 @@
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import Link from "next/link";
 import * as motion from "motion/react-client";
 import { slideLeftVariants } from "@/utils/variants";
+import { ButtonLink } from "@/components/CustomButtons";
 
 const Hero = () => {
   return (
@@ -35,21 +34,21 @@ const Hero = () => {
           </span>
         </h2>
         <div className="text-gray-300">
-          <p className="max-w-4xl mx-auto">
+          <p className="max-w-4xl mx-auto mb-5">
             I'm <b>Terence Zhang</b>, a full-stack web developer based in
             Auckland, New Zealand. I am passionate about crafting fast,
             scalable, and visually appealing web applications.
           </p>
-          <b>Let's discuss your next project!</b>
+          <b className="text-lg">Let's discuss your next project!</b>
         </div>
       </div>
       <div className="flex flex-col space-y-3 md:flex-row md:space-y-0 mt-5 md:space-x-7">
-        <Button asChild size="lg">
-          <Link href="#projects">Expore my Work ⬇️</Link>
-        </Button>
-        <Button asChild variant="secondary" size="lg">
-          <Link href="#contact">👋 Get in Touch</Link>
-        </Button>
+        <ButtonLink content="Expore my Work ⬇️" link="#projects" />
+        <ButtonLink
+          content="👋 Get in Touch"
+          link="#contact"
+          variant="secondary"
+        />
       </div>
     </motion.section>
   );

@@ -8,7 +8,8 @@
       "TypeScript",
       "Tailwind CSS",
       "React Router",
-      "Framer Motion"
+      "Framer Motion",
+      "REST Countries API"
     ],
     "description": [
       "Search and filter by name or region, with sorting options for name and population",
@@ -22,7 +23,14 @@
     "emoji": "📍",
     "title": "IP Address Tracker",
     "image": "/projects/ip_address_tracker.png",
-    "techStack": ["React", "TypeScript", "Tailwind CSS", "Redux", "Leaflet"],
+    "techStack": [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Redux",
+      "Leaflet",
+      "IPWhoIs API"
+    ],
     "description": [
       "Search for any valid IPv4 or IPv6 address",
       "Access detauked information including location, timezone, and ISP",
@@ -35,10 +43,16 @@
     "emoji": "⛅",
     "title": "GlobeWeather",
     "image": "/projects/globeweather.png",
-    "techStack": ["React", "TypeScript", "Tailwind CSS", "Redux"],
+    "techStack": [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Redux",
+      "OpenWeatherMap API"
+    ],
     "description": [
       "Search any city worldwide with autocomplete suggestions",
-      "Contains real-time weather data including temperature, wind speed, and humidity, provided by the OpenWeather API",
+      "Contains real-time weather data including temperature, wind speed, and humidity, provided by the OpenWeatherMap API",
       "Dynamic backgrounds and unit toggle for metric/imperial measurements"
     ],
     "githubLink": "https://github.com/TerenceCLZhang/GlobeWeather",
@@ -51,10 +65,28 @@
     "techStack": ["HTML", "CSS", "JavaScript", "GitHub API"],
     "description": [
       "Search for any GitHub by username",
-      "View GitHub user details including name, location, join date, followers/following count, number of repositories, and links.",
+      "View GitHub user details including name, location, join date, followers/following count, number of repositories, and links",
       "Browse the user’s latest repositories, sorted by recent activity"
     ],
     "githubLink": "https://github.com/TerenceCLZhang/github-user-finder",
     "liveLink": "https://terenceclzhang-github-user-finder.netlify.app/"
+  },
+  {
+    "emoji": "🤖",
+    "title": "Adversarial Insight ML",
+    "image": "/projects/aiml.png",
+    "techStack": [
+      "Python",
+      "PyTorch",
+      "PyTorch Lightning",
+      "Adversarial Robustness Toolbox",
+      "Tensorboard"
+    ],
+    "description": [
+      "A Python package that assesses the robustness of image classification models against various adversarial attacks",
+      "Supports multiple attack methods, for thorough vulnerability testing",
+      "Provides an easy-to-use function and clear documentation for streamlined model testing and analysis"
+    ],
+    "githubLink": "https://github.com/uoa-compsci399-s2-2023/adversarial-insight-ml"
   }
 ]

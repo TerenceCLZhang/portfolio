@@ -5,7 +5,7 @@ import * as motion from "motion/react-client";
 const Header = () => {
   return (
     <motion.header
-      className="w-full fixed left-1/2 -translate-x-1/2 backdrop-blur-3xl py-6 z-20 section-padding"
+      className="w-full fixed left-1/2 -translate-x-1/2 bg-gray-900 py-6 z-20 section-padding"
       initial={{
         y: "-100%",
         opacity: 0,

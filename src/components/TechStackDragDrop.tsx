@@ -7,7 +7,6 @@ import tech from "../data/tech.json";
 
 const TechStackDragDrop = () => {
   const dragDropContainer = useRef(null);
-
   return (
     <div
       className="md:h-85 flex flex-wrap gap-3 items-center justify-center"

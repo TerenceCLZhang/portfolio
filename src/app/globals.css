@@ -154,7 +154,7 @@
 
 @layer components {
   .section-padding {
-    @apply px-5 md:px-20;
+    @apply px-5 md:px-20 lg:px-0;
   }
 
   .nav-item {

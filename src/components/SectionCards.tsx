@@ -14,6 +14,7 @@ import { Computer, Github } from "lucide-react";
 import { Badge } from "./ui/badge";
 import * as motion from "motion/react-client";
 import { slideLeftVariants, slideRightVariants } from "@/utils/variants";
+import { ButtonLink } from "./CustomButtons";
 
 const AboutCard = ({
   title,
@@ -92,7 +93,7 @@ const ProjectCard = ({
     >
       <Card className="bg-gray-800 border-3 border-gray-600 text-gray-300 h-full w-full gap-5">
         <CardHeader>
-          <CardTitle className="text-xl flex items-center justify-between">
+          <CardTitle className="text-xl">
             <h4>
               {emoji} {title}
             </h4>
@@ -122,17 +123,20 @@ const ProjectCard = ({
           </ul>
         </CardContent>
         <CardFooter className="flex gap-3 justify-center mt-3">
-          <Button asChild size="lg">
-            <Link href={githubLink} target="_blank">
-              <Github /> GitHub Repo
-            </Link>
-          </Button>
+          <ButtonLink
+            content="GitHub Repo"
+            link={githubLink}
+            icon={<Github />}
+            newTab={true}
+          />
           {liveLink && (
-            <Button asChild variant="secondary" size="lg">
-              <Link href={liveLink} target="_blank">
-                <Computer /> Live Website
-              </Link>
-            </Button>
+            <ButtonLink
+              content="Live Website"
+              link={githubLink}
+              icon={<Computer />}
+              variant="secondary"
+              newTab={true}
+            />
           )}
         </CardFooter>
       </Card>
