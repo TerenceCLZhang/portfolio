@@ -8,8 +8,6 @@ import {
 } from "@/components/ui/card";
 import Image from "next/image";
 import { JSX } from "react";
-import { Button } from "./ui/button";
-import Link from "next/link";
 import { Computer, Github } from "lucide-react";
 import { Badge } from "./ui/badge";
 import * as motion from "motion/react-client";
@@ -36,6 +34,8 @@ const AboutCard = ({
       viewport={{
         once: true,
       }}
+      whileHover={{ y: -5 }}
+      transition={{ type: "spring", stiffness: 300 }}
     >
       <Card className="bg-gray-800 border-3 border-gray-600 text-gray-300 gap-3 h-full w-full">
         <CardHeader>
@@ -90,6 +90,8 @@ const ProjectCard = ({
       viewport={{
         once: true,
       }}
+      whileHover={{ y: -5 }}
+      transition={{ type: "spring", stiffness: 300 }}
     >
       <Card className="bg-gray-800 border-3 border-gray-600 text-gray-300 h-full w-full gap-5">
         <CardHeader>
@@ -122,7 +124,7 @@ const ProjectCard = ({
             ))}
           </ul>
         </CardContent>
-        <CardFooter className="flex gap-3 justify-center mt-3">
+        <CardFooter className="flex flex-col md:flex-row gap-3 justify-center mt-3">
           <ButtonLink
             content="GitHub Repo"
             link={githubLink}
@@ -132,7 +134,7 @@ const ProjectCard = ({
           {liveLink && (
             <ButtonLink
               content="Live Website"
-              link={githubLink}
+              link={liveLink}
               icon={<Computer />}
               variant="secondary"
               newTab={true}

@@ -37,7 +37,7 @@
       "View its location on an interactive map integrated with Leaflet and Google Maps"
     ],
     "githubLink": "https://github.com/TerenceCLZhang/ip-address-tracker",
-    "liveLink": "https://terenceclzhang-github-user-finder.netlify.app/"
+    "liveLink": "https://terenceclzhang-ip-address-tracker.netlify.app/"
   },
   {
     "emoji": "⛅",
@@ -57,19 +57,6 @@
     ],
     "githubLink": "https://github.com/TerenceCLZhang/GlobeWeather",
     "liveLink": "https://terenceclzhang-globeweather.netlify.app/"
-  },
-  {
-    "emoji": "👦",
-    "title": "GitHub User Finder",
-    "image": "/projects/github_user_finder.png",
-    "techStack": ["HTML", "CSS", "JavaScript", "GitHub API"],
-    "description": [
-      "Search for any GitHub by username",
-      "View GitHub user details including name, location, join date, followers/following count, number of repositories, and links",
-      "Browse the user’s latest repositories, sorted by recent activity"
-    ],
-    "githubLink": "https://github.com/TerenceCLZhang/github-user-finder",
-    "liveLink": "https://terenceclzhang-github-user-finder.netlify.app/"
   },
   {
     "emoji": "🤖",

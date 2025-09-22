@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Calistoga } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import "./globals.css";
+import GoogleReCaptchaWrapper from "./api/GoogleReCaptchaWrapper";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -26,9 +27,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${calistoga.variable}`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${calistoga.variable} scrollbar`}
+    >
       <body className="bg-gray-900 text-white antialiased">
-        {children}
+        <GoogleReCaptchaWrapper>{children}</GoogleReCaptchaWrapper>
+
         <Toaster />
       </body>
     </html>

@@ -9,13 +9,13 @@ const TechStackDragDrop = () => {
   const dragDropContainer = useRef(null);
   return (
     <div
-      className="md:h-85 flex flex-wrap gap-3 items-center justify-center"
+      className="md:h-70 lg:h-90 flex flex-wrap gap-3 items-center justify-center"
       ref={dragDropContainer}
     >
       {tech.map((item, index) => (
         <motion.div
           key={index}
-          className="flex px-5 py-2 rounded-3xl cursor-grab text-white font-medium gradient-1 space-x-2 items-center shadow-lg hover:shadow-blue-400/30 transition-shadow w-fit h-fit"
+          className="flex px-5 py-2 rounded-3xl cursor-grab text-white font-medium gradient-2 space-x-2 items-center shadow-lg hover:shadow-blue-400/30 transition-shadow w-fit h-fit"
           drag
           dragConstraints={dragDropContainer}
           dragElastic={0.1}
@@ -27,7 +27,7 @@ const TechStackDragDrop = () => {
             alt=""
             width={20}
             height={20}
-            className="w-[20px] h-[20px] select-none pointer-events-none"
+            className="w-[20px] h-[20px]"
           />
           <span>{item.name}</span>
         </motion.div>

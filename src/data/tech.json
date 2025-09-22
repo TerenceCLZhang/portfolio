@@ -6,9 +6,11 @@
   { "name": "React", "path": "react.svg" },
   { "name": "Next.js", "path": "nextjs.svg" },
   { "name": "Tailwind CSS", "path": "tailwindcss.svg" },
+  { "name": "Node.js", "path": "nodejs.svg" },
+  { "name": "Express.js", "path": "expressjs.svg" },
+  { "name": "MongoDB", "path": "mongodb.svg" },
   { "name": "Python", "path": "python.svg" },
   { "name": "Java", "path": "java.svg" },
   { "name": "Git", "path": "git.svg" },
-  { "name": "GitHub", "path": "github.svg" },
-  { "name": "MongoDB", "path": "mongodb.svg" }
+  { "name": "GitHub", "path": "github.svg" }
 ]

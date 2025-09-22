@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 
 const Footer = () => {
@@ -12,6 +12,15 @@ const Footer = () => {
           &copy; Copyright 2025 Terence Zhang. All rights reserved.
         </p>
         <div className="space-x-3">
+          <Button asChild size="icon">
+            <Link
+              href="mailto:terence.zhang2014@gmail.com"
+              target="_blank"
+              aria-label="Email Terence directly"
+            >
+              <Mail />
+            </Link>
+          </Button>
           <Button asChild size="icon">
             <Link
               href="https://www.linkedin.com/in/terence-chun-lin-zhang/"

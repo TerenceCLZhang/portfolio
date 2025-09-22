@@ -14,10 +14,10 @@ const Header = () => {
         y: 0,
         opacity: 1,
       }}
-      transition={{ duration: 0.75, ease: "easeInOut" }}
+      transition={{ duration: 1, ease: "easeInOut" }}
     >
       <div className="mx-auto flex justify-center items-center flex-col space-y-3 md:flex-row md:space-y-0 md:justify-between max-w-5xl">
-        <Link href="/">
+        <Link href="#home">
           <h1 className="gradient-1">Terence Zhang</h1>
         </Link>
         <NavMenu />

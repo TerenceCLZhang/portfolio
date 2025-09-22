@@ -32,7 +32,7 @@ const ButtonLink = ({
       asChild
       size="lg"
       variant={variant}
-      className="hover:scale-110 active:scale-95"
+      className="hover:scale-105 active:scale-95"
     >
       <Link
         href={link}

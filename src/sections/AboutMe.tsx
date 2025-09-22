@@ -1,4 +1,3 @@
-import SectionHead from "@/components/SectionHead";
 import TechStackDragDrop from "@/components/TechStackDragDrop";
 import InterestsCarousel from "@/components/InterestsCarousel";
 import Image from "next/image";
@@ -6,34 +5,36 @@ import { File, Github, Linkedin } from "lucide-react";
 import { AboutCard } from "@/components/SectionCards";
 import { ButtonLink } from "@/components/CustomButtons";
 import Link from "next/link";
+import Section from "@/components/Sections";
 
 const AboutMe = () => {
   return (
-    <section className="container pt-30 py-5 max-w-5xl" id="about-me">
-      <SectionHead
-        title="About Me"
-        heading="Who am I"
-        description="Get to know me, the tools I work with, and the hobbies and interests that keep me curious and motivated."
-      />
-      <div className="py-10 flex gap-6 flex-col lg:flex-row">
-        <div className="flex-1 min-w-0 flex flex-col gap-4">
-          <MainAboutMeCard />
-          <Socials />
-        </div>
+    <Section
+      id="about-me"
+      title="About Me"
+      heading="Who am I"
+      description="Get to know me, the tools I work with, and the hobbies and interests that keep me curious and motivated."
+      content={
+        <div className="py-10 flex gap-6 flex-col lg:flex-row">
+          <div className="flex-1 min-w-0 flex flex-col gap-4">
+            <MainAboutMeCard />
+            <Socials />
+          </div>
 
-        <div className="flex-1 min-w-0 flex flex-col gap-4">
-          <TechStack />
-          <Interests />
+          <div className="flex-1 min-w-0 flex flex-col gap-4">
+            <TechStack />
+            <Interests />
+          </div>
         </div>
-      </div>
-    </section>
+      }
+    />
   );
 };
 
 const MainAboutMeCard = () => {
   return (
     <AboutCard
-      title="👤 Terence Zhang"
+      title="👦🏻 Terence Zhang"
       direction="left"
       content={() => (
         <div className="text-justify">
@@ -55,10 +56,7 @@ const MainAboutMeCard = () => {
               collaborative environments and aim to build{" "}
               <b>innovative, reliable, and impactful solutions</b>. Learn more
               about my{" "}
-              <Link
-                href="/academics"
-                className="font-bold text-purple-400 drop-shadow-sm hover:text-white underline decoration-3 underline-offset-5 decoration-dashed"
-              >
+              <Link href="/academics" className="text-link">
                 academic journey here
               </Link>
               .
@@ -79,7 +77,7 @@ const Socials = () => {
   return (
     <AboutCard
       title="⛓️‍💥 Find Me Online"
-      description="Links to my professional network, open-source work, and CV / Résumé"
+      // description="Links to my professional network, open-source work, and CV / Résumé"
       direction="left"
       content={() => (
         <div className="flex flex-col w-full space-y-3 md:flex-row md:space-y-0 md:justify-evenly">
@@ -122,7 +120,7 @@ const Interests = () => {
   return (
     <AboutCard
       title="🧩 Beyond Code"
-      description="Learn more about my interests and hobbies beyond programming."
+      description="Learn more about my interests and hobbies when I'm not coding."
       direction="right"
       content={() => <InterestsCarousel />}
     />

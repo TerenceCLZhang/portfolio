@@ -6,7 +6,7 @@ import { ButtonLink } from "@/components/CustomButtons";
 const Hero = () => {
   return (
     <motion.section
-      className="pt-32 md:pt-40 container text-center flex flex-col items-center space-y-3 max-w-5xl"
+      className="pt-32 container text-center flex flex-col items-center space-y-5 max-w-5xl"
       id="home"
       variants={slideLeftVariants}
       initial="initial"
@@ -29,7 +29,7 @@ const Hero = () => {
       <div className="space-y-5">
         <h2 className="text-gray-300">
           Transforming concepts into seamless{" "}
-          <span className="gradient-1 bg-clip-text text-transparent italic">
+          <span className="gradient-1 bg-clip-text text-transparent italic pr-1">
             web experiences
           </span>
         </h2>

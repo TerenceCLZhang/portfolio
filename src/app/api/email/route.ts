@@ -16,27 +16,19 @@ export const POST = async (request: NextRequest) => {
   const mailOptions: Mail.Options = {
     from: process.env.EMAIL,
     to: process.env.EMAIL,
-    subject: `Message from ${name} (${email})`,
+    cc: email,
+    subject: `Message from ${name} (${email}) - Sent from Portfolio`,
     text: message,
   };
 
-  const sendMailPromise = () => {
-    return new Promise<string>((resolve, reject) => {
-      transport.sendMail(mailOptions, (error) => {
-        if (!error) {
-          resolve("Email sent");
-        } else {
-          reject(error.message);
-        }
-      });
-    });
-  };
-
   try {
-    await sendMailPromise();
+    await transport.sendMail(mailOptions);
     return NextResponse.json({ message: "Email sent" });
-  } catch (err) {
-    console.error("Email sending error:", err);
-    return NextResponse.json({ error: err }, { status: 500 });
+  } catch (error) {
+    console.error("Email sending error:", error);
+    return NextResponse.json(
+      { error: "Failed to send email" },
+      { status: 500 }
+    );
   }
 };

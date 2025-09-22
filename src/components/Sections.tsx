@@ -23,10 +23,31 @@ const SectionHead = ({
       <span className="uppercase text-gray-400 font-semibold tracking-[0.65rem]">
         {title}
       </span>
-      <h3 className="gradient-2">{heading}</h3>
-      <p>{description}</p>
+      <h3 className="gradient-1">{heading}</h3>
+      <p className="max-w-4xl">{description}</p>
     </motion.div>
   );
 };
 
-export default SectionHead;
+const Section = ({
+  id,
+  title,
+  heading,
+  description,
+  content,
+}: {
+  id: string;
+  title: string;
+  heading: string;
+  description: string;
+  content: React.ReactNode;
+}) => {
+  return (
+    <section className="container pt-37 md:pt-28 py-5 max-w-5xl" id={id}>
+      <SectionHead title={title} heading={heading} description={description} />
+      {content}
+    </section>
+  );
+};
+
+export default Section;
