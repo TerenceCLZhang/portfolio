@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="space-x-3">
           <Button asChild size="icon">
             <Link
-              href="mailto:terence.zhang2014@gmail.com"
+              href={`mailto:${process.env.EMAIL}`}
               target="_blank"
               aria-label="Email Terence directly"
             >
