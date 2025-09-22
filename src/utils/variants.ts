@@ -1,7 +1,7 @@
 import { Variants, Transition } from "motion/react";
 
 const slideTransition: Transition = {
-  duration: 1.5,
+  duration: 1.25,
   ease: "easeInOut",
 };
 
