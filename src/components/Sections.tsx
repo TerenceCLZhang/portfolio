@@ -12,7 +12,7 @@ const SectionHead = ({
 }) => {
   return (
     <motion.div
-      className="flex items-center justify-center flex-col space-y-3 text-center"
+      className="flex items-center justify-center flex-col gap-3 text-center mb-10"
       variants={slideLeftVariants}
       initial="initial"
       whileInView="animate"

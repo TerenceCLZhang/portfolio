@@ -15,7 +15,7 @@ const AboutMe = () => {
       heading="Who am I"
       description="Get to know me, the tools I work with, and the hobbies and interests that keep me curious and motivated."
       content={
-        <div className="py-10 flex gap-6 flex-col lg:flex-row">
+        <div className="flex gap-6 flex-col lg:flex-row">
           <div className="flex-1 min-w-0 flex flex-col gap-4">
             <MainAboutMeCard />
             <Socials />
@@ -80,7 +80,7 @@ const Socials = () => {
       // description="Links to my professional network, open-source work, and CV / Résumé"
       direction="left"
       content={() => (
-        <div className="flex flex-col w-full space-y-3 md:flex-row md:space-y-0 md:justify-evenly">
+        <div className="flex flex-col w-full gap-3 md:flex-row md:gap-0 md:justify-evenly">
           <ButtonLink
             content="LinkedIn"
             link="https://www.linkedin.com/in/terence-chun-lin-zhang/"

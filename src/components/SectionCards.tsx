@@ -101,7 +101,7 @@ const ProjectCard = ({
             </h4>
           </CardTitle>
         </CardHeader>
-        <CardContent className="flex-grow flex space-y-5 flex-col">
+        <CardContent className="flex-grow flex gap-5 flex-col">
           <div className="bg-gray-700 border-3 rounded-4xl border-gray-600 p-1">
             <Image
               src={image}

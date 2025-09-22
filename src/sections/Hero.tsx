@@ -6,7 +6,7 @@ import { ButtonLink } from "@/components/CustomButtons";
 const Hero = () => {
   return (
     <motion.section
-      className="pt-32 container text-center flex flex-col items-center space-y-5 max-w-5xl"
+      className="pt-32 lg:pt-28 container text-center flex flex-col items-center gap-5 max-w-5xl"
       id="home"
       variants={slideLeftVariants}
       initial="initial"
@@ -42,7 +42,7 @@ const Hero = () => {
           <b className="text-lg">Let's discuss your next project!</b>
         </div>
       </div>
-      <div className="flex flex-col space-y-3 md:flex-row md:space-y-0 mt-5 md:space-x-7">
+      <div className="flex flex-col gap-3 md:flex-row mt-5 md:gap-7">
         <ButtonLink content="Expore my Work ⬇️" link="#projects" />
         <ButtonLink
           content="👋 Get in Touch"

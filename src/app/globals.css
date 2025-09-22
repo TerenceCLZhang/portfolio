@@ -176,7 +176,15 @@
   }
 
   .nav-item {
-    @apply px-2 py-0.5 text-white/70 text-sm sm:text-base font-semibold rounded-full hover:bg-white/10 hover:text-white transition duration-200 ease-in-out;
+    @apply relative text-white/70 text-sm sm:text-base font-semibold hover:text-white;
+  }
+
+  .nav-item::after {
+    @apply content-[""] absolute left-0 -bottom-[5px] bg-primary h-[3px] w-0 rounded-xl transition-all duration-300 ease-in-out;
+  }
+
+  .nav-item:hover::after {
+    @apply w-full;
   }
 
   .gradient-1 {

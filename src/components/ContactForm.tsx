@@ -108,7 +108,7 @@ const ContactForm = () => {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="space-y-5 max-w-5xl mx-auto py-10"
+        className="space-y-5 max-w-5xl mx-auto"
         aria-busy={submitting}
       >
         <FormField
@@ -196,7 +196,7 @@ const ContactForm = () => {
 
         <Button
           type="submit"
-          className="text-base hover:scale-110 active:scale-95"
+          className="text-base"
           size="lg"
           disabled={submitting}
         >

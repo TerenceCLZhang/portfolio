@@ -10,7 +10,7 @@ const Projects = () => {
       heading="What I've Built"
       description="A showcase of some of the projects I've built, highlighting my skills in software development, problem solving, and experimenting with new ideas."
       content={
-        <div className="py-10 w-full flex flex-wrap justify-center gap-5">
+        <div className="w-full flex flex-wrap justify-center gap-5">
           {projects.map((project, index) => (
             <div
               key={index}
