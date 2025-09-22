@@ -14,7 +14,9 @@ const Header = () => {
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious();
-    setHidden(isMobile && previous && latest > previous ? true : false);
+    setHidden(
+      isMobile && previous && latest > previous && latest > 25 ? true : false
+    );
   });
 
   return (
