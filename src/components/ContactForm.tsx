@@ -175,7 +175,7 @@ const ContactForm = () => {
         />
 
         <FormDescription>
-          This form is protected by reCAPTCHA. Google’s{" "}
+          This form is protected by reCAPTCHA. Google&apos;s{" "}
           <Link
             href="https://policies.google.com/privacy?hl=en"
             target="_blank"

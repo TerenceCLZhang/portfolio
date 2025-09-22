@@ -35,11 +35,11 @@ const Hero = () => {
         </h2>
         <div className="text-gray-300">
           <p className="max-w-4xl mx-auto mb-5">
-            I'm <b>Terence Zhang</b>, a full-stack web developer based in
+            I&apos;m <b>Terence Zhang</b>, a full-stack web developer based in
             Auckland, New Zealand. I am passionate about crafting fast,
             scalable, and visually appealing web applications.
           </p>
-          <b className="text-lg">Let's discuss your next project!</b>
+          <b className="text-lg">Let&apos;s discuss your next project!</b>
         </div>
       </div>
       <div className="flex flex-col gap-3 md:flex-row mt-5 md:gap-7">
