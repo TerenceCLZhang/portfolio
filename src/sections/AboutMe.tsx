@@ -4,7 +4,6 @@ import Image from "next/image";
 import { File, Github, Linkedin } from "lucide-react";
 import { AboutCard } from "@/components/SectionCards";
 import { ButtonLink } from "@/components/CustomButtons";
-import Link from "next/link";
 import Section from "@/components/Sections";
 
 const AboutMe = () => {
@@ -54,12 +53,7 @@ const MainAboutMeCard = () => {
               software engineering. My research experience has honed my
               analytical thinking and attention to detail. I thrive in
               collaborative environments and aim to build{" "}
-              <b>innovative, reliable, and impactful solutions</b>. Learn more
-              about my{" "}
-              <Link href="/academics" className="text-link">
-                academic journey here
-              </Link>
-              .
+              <b>innovative, reliable, and impactful solutions</b>.
             </p>
             <p>
               I primarily work with <b>React</b>, <b>Next.js</b>,{" "}
