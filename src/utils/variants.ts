@@ -1,4 +1,4 @@
-import { Variants, Transition, animate } from "motion/react";
+import { Variants, Transition } from "motion/react";
 
 const slideTransition: Transition = {
   duration: 1.5,
@@ -8,13 +8,11 @@ const slideTransition: Transition = {
 export const SlideDownVariants: Variants = {
   hidden: {
     y: "-100%",
-    opacity: 0,
   },
   visible: {
     y: 0,
-    opacity: 1,
     transition: {
-      duration: 0.75,
+      duration: 0.5,
       ease: "easeInOut",
     },
   },
