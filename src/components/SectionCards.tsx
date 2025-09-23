@@ -106,8 +106,8 @@ const ProjectCard = ({
             <Image
               src={image}
               alt={`${title} card image`}
-              width={2000}
-              height={2000}
+              width={1000}
+              height={1000}
               className="mx-auto w-full h-full rounded-3xl"
             />
           </div>
