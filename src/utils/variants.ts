@@ -1,20 +1,23 @@
 import { Variants, Transition } from "motion/react";
 
-const slideTransition: Transition = {
+const slideLeftRightTransition: Transition = {
   duration: 1.25,
   ease: "easeInOut",
 };
 
-export const SlideDownVariants: Variants = {
+const slideDownTransition: Transition = {
+  duration: 0.5,
+  ease: "easeInOut",
+};
+
+export const slideDownVariants: Variants = {
   hidden: {
     y: "-100%",
+    transition: slideDownTransition,
   },
   visible: {
     y: 0,
-    transition: {
-      duration: 0.5,
-      ease: "easeInOut",
-    },
+    transition: slideDownTransition,
   },
 };
 
@@ -26,7 +29,7 @@ export const slideLeftVariants: Variants = {
   animate: {
     x: 0,
     opacity: 1,
-    transition: slideTransition,
+    transition: slideLeftRightTransition,
   },
 };
 
@@ -38,6 +41,6 @@ export const slideRightVariants: Variants = {
   animate: {
     x: 0,
     opacity: 1,
-    transition: slideTransition,
+    transition: slideLeftRightTransition,
   },
 };

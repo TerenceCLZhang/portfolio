@@ -3,7 +3,7 @@
 import NavMenu from "@/components/NavMenu";
 import Link from "next/link";
 import useCheckMobile from "@/utils/useCheckMobile";
-import { SlideDownVariants } from "@/utils/variants";
+import { slideDownVariants } from "@/utils/variants";
 import { useState } from "react";
 import { motion, useMotionValueEvent, useScroll } from "motion/react";
 
@@ -13,16 +13,21 @@ const Header = () => {
   const [hidden, setHidden] = useState(false);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    const previous = scrollY.getPrevious();
-    setHidden(
-      isMobile && previous && latest > previous && latest > 25 ? true : false
-    );
+    const previous = scrollY.getPrevious() ?? 0;
+
+    if (!isMobile) return;
+
+    if (latest > previous && latest > 25) {
+      setHidden(true);
+    } else if (latest < previous) {
+      setHidden(false);
+    }
   });
 
   return (
     <motion.header
       className="w-full fixed left-1/2 -translate-x-1/2 bg-gray-900 py-6 z-20 section-padding shadow-2xl"
-      variants={SlideDownVariants}
+      variants={slideDownVariants}
       initial="hidden"
       animate={isMobile && hidden ? "hidden" : "visible"}
     >
