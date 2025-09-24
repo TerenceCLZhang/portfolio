@@ -42,7 +42,7 @@ const MainAboutMeCard = () => {
             alt="Picture of Terence Zhang"
             width={200}
             height={200}
-            className="float float-left mr-4 mb-2 border-5 border-primary rounded-full w-[200px] h-[200px] object-cover"
+            className="mx-auto md:float md:float-left md:mr-4 mb-2 border-5 border-primary rounded-full w-[200px] h-[200px] object-cover"
           />
           <div className="space-y-5">
             <p>

@@ -39,7 +39,7 @@ const AboutCard = ({
     >
       <Card className="bg-gray-800 border-3 border-gray-600 text-gray-300 gap-3 h-full w-full">
         <CardHeader>
-          <CardTitle className="text-xl">
+          <CardTitle className="text-center md:text-left text-xl">
             <h4>{title}</h4>
           </CardTitle>
           {description && (
@@ -95,7 +95,7 @@ const ProjectCard = ({
     >
       <Card className="bg-gray-800 border-3 border-gray-600 text-gray-300 h-full w-full gap-5">
         <CardHeader>
-          <CardTitle className="text-xl">
+          <CardTitle className=" text-center md:text-left text-xl">
             <h4>
               {emoji} {title}
             </h4>
@@ -116,7 +116,7 @@ const ProjectCard = ({
               <Badge key={index}>{item}</Badge>
             ))}
           </div>
-          <ul className="px-10 my-auto space-y-2">
+          <ul className="pl-10 my-auto space-y-2">
             {description.map((item, index) => (
               <li key={index} className="list-disc">
                 {item}
