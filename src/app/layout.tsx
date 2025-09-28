@@ -3,6 +3,7 @@ import { Inter, Calistoga } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import "./globals.css";
 import GoogleReCaptchaWrapper from "./api/GoogleReCaptchaWrapper";
+import GoogleAnalytics from "@/components/analytics/googleAnalytics";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -31,6 +32,9 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${calistoga.variable} scrollbar`}
     >
+      <head>
+        <GoogleAnalytics />
+      </head>
       <body className="bg-gray-900 text-white antialiased">
         <GoogleReCaptchaWrapper>{children}</GoogleReCaptchaWrapper>
 
