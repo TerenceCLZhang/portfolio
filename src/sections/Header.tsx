@@ -4,23 +4,23 @@ import NavMenu from "@/components/NavMenu";
 import Link from "next/link";
 import useCheckMobile from "@/utils/useCheckMobile";
 import { slideDownVariants } from "@/utils/variants";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { motion, useMotionValueEvent, useScroll } from "motion/react";
 
 const Header = () => {
   const isMobile = useCheckMobile();
   const { scrollY } = useScroll();
+  const lastYRef = useRef(0);
   const [hidden, setHidden] = useState(false);
 
-  useMotionValueEvent(scrollY, "change", (latest) => {
-    const previous = scrollY.getPrevious() ?? 0;
-
+  useMotionValueEvent(scrollY, "change", (y) => {
     if (!isMobile) return;
 
-    if (latest > previous && latest > 25) {
-      setHidden(true);
-    } else if (latest < previous) {
-      setHidden(false);
+    const difference = y - lastYRef.current;
+
+    if (Math.abs(difference) > 85) {
+      setHidden(difference > 0);
+      lastYRef.current = y;
     }
   });
 
