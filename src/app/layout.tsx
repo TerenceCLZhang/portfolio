@@ -3,7 +3,7 @@ import { Inter, Calistoga } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import "./globals.css";
 import GoogleReCaptchaWrapper from "./api/GoogleReCaptchaWrapper";
-import GoogleAnalytics from "@/components/analytics/googleAnalytics";
+import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 
 const inter = Inter({
   subsets: ["latin"],
