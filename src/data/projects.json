@@ -1,5 +1,27 @@
 [
   {
+    "emoji": "📍",
+    "title": "Pinfinity",
+    "image": "/projects/pinfinity.png",
+    "techStack": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "ShadCN",
+      "Prisma",
+      "Better Auth",
+      "MongoDB",
+      "Cloudflare R2"
+    ],
+    "description": [
+      "A fullstack Pinterest clone with secure user authentication, responsive design, and searching and sorting functionalities",
+      "Complete CRUD functionality for creating, viewing, editing, and deleting pins",
+      "Social features including the ability to like pins and follow users"
+    ],
+    "githubLink": "https://github.com/TerenceCLZhang/pinfinity",
+    "liveLink": "https://pinfinity-terenceclzhang.vercel.app/"
+  },
+  {
     "emoji": "🌍",
     "title": "Where in the World?",
     "image": "/projects/where_in_the_world.png",
