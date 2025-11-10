@@ -1,0 +1,41 @@
+[
+  {
+    "emoji": "📍",
+    "title": "IP Address Tracker",
+    "image": "/projects/ip_address_tracker.png",
+    "techStack": [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Redux",
+      "Leaflet",
+      "IPWhoIs API"
+    ],
+    "description": [
+      "Search for any valid IPv4 or IPv6 address",
+      "Access detauked information including location, timezone, and ISP",
+      "View its location on an interactive map integrated with Leaflet and Google Maps"
+    ],
+    "githubLink": "https://github.com/TerenceCLZhang/ip-address-tracker",
+    "liveLink": "https://terenceclzhang-ip-address-tracker.netlify.app/"
+  },
+  {
+    "emoji": "⛅",
+    "title": "GlobeWeather",
+    "image": "/projects/globeweather.png",
+    "techStack": [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Redux",
+      "OpenWeatherMap API"
+    ],
+    "description": [
+      "Search any city worldwide with autocomplete suggestions",
+      "Contains real-time weather data including temperature, wind speed, and humidity, provided by the OpenWeatherMap API",
+      "Dynamic backgrounds and unit toggle for metric/imperial measurements"
+    ],
+    "githubLink": "https://github.com/TerenceCLZhang/GlobeWeather",
+    "liveLink": "https://terenceclzhang-globeweather.netlify.app/"
+  }
+]
