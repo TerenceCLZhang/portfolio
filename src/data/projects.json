@@ -15,9 +15,9 @@
       "JWT"
     ],
     "description": [
-      "A full-stack real-time chat application with one-on-one and group messaging, including image sharing",
+      "A full-stack real-time chat application with one-on-one and group messaging with media sharing and emojis",
       "Implemented secure user authentication with JWT, email verification, and password reset features",
-      "Enabled live user presence/status updates and protected APIs with rate limiting for performance and security"
+      "Real-time user presence, notification sounds, and persistent unread message counts for seamless engagement."
     ],
     "githubLink": "https://github.com/TerenceCLZhang/linkup",
     "liveLink": "https://linkup-ozf3.onrender.com/"
