@@ -35,9 +35,9 @@ const Hero = () => {
         </h2>
         <div className="text-gray-300">
           <p className="max-w-4xl mx-auto mb-5">
-            I&apos;m <b>Terence Zhang</b>, a full-stack web developer based in
-            Auckland, New Zealand. I am passionate about crafting fast,
-            scalable, and visually appealing web applications.
+            I&apos;m <b>Terence Zhang</b>, a software engineer based in Sydney,
+            Australia. I am passionate about crafting fast, scalable, and
+            visually appealing web applications.
           </p>
           <b className="text-lg">Let&apos;s discuss your next project!</b>
         </div>

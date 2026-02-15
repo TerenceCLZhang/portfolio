@@ -46,13 +46,20 @@ const MainAboutMeCard = () => {
           />
           <div className="space-y-5">
             <p>
-              I am a 2025 University of Auckland graduate with a{" "}
-              <b>BSc. (Honours) in Computer Science with First Class Honours</b>
-              . Passionate about problem-solving and software development, I
-              bring a solid foundation in algorithms, data structures, and
-              software engineering. My research experience has honed my
-              analytical thinking and attention to detail. I thrive in
-              collaborative environments and aim to build{" "}
+              I am an Associate Software Engineer at{" "}
+              <a
+                href="https://luxuryescapes.com/"
+                target="_blank"
+                className="hover:opacity-80 transition-opacity"
+              >
+                <b>Luxury Escapes</b>
+              </a>{" "}
+              with a BSc. (Honours) in Computer Science with First Class Honours
+              from the University of Auckland. Passionate about problem-solving
+              and software development, I bring a solid foundation in
+              algorithms, data structures, and software engineering. My research
+              experience has honed my analytical thinking and attention to
+              detail. I thrive in collaborative environments and aim to build{" "}
               <b>innovative, reliable, and impactful solutions</b>.
             </p>
             <p>
