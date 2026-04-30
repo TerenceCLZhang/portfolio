@@ -27,9 +27,9 @@ const Hero = () => {
         <p className="text-sm">Open to New Opportunities</p>
       </div>
       <div className="space-y-5">
-        <h2 className="text-gray-300">
+        <h2 className="text-purple-400">
           Transforming concepts into seamless{" "}
-          <span className="gradient-1 bg-clip-text text-transparent italic pr-1">
+          <span className="text-purple-300 italic pr-1">
             web experiences
           </span>
         </h2>

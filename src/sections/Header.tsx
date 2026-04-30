@@ -33,7 +33,7 @@ const Header = () => {
     >
       <div className="mx-auto flex justify-center items-center flex-col gap-3 md:flex-row md:gap-0 md:justify-between max-w-5xl">
         <Link href="#home">
-          <h1 className="gradient-1">Terence Zhang</h1>
+          <h1>Terence Zhang</h1>
         </Link>
         <NavMenu />
       </div>

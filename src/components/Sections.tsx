@@ -19,11 +19,11 @@ const SectionHead = ({
       viewport={{
         once: true,
       }}
-    >
+      >
       <span className="uppercase text-gray-400 font-semibold tracking-[0.65rem]">
         {title}
       </span>
-      <h3 className="gradient-1">{heading}</h3>
+      <h3>{heading}</h3>
       <p className="max-w-4xl">{description}</p>
     </motion.div>
   );

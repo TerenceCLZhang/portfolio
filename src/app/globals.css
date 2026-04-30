@@ -132,7 +132,7 @@
   h1,
   h2,
   h3 {
-    @apply bg-clip-text text-transparent;
+    @apply text-purple-400;
   }
 
   h1 {
