@@ -29,7 +29,7 @@ const Hero = () => {
       <div className="space-y-5">
         <h2 className="text-purple-400">
           Transforming concepts into seamless{" "}
-          <span className="text-purple-300 italic pr-1">
+          <span className="text-purple-400 italic pr-1 underline">
             web experiences
           </span>
         </h2>
