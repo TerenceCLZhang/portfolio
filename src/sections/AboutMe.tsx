@@ -1,7 +1,7 @@
 import TechStackDragDrop from "@/components/TechStackDragDrop";
 import InterestsCarousel from "@/components/InterestsCarousel";
 import Image from "next/image";
-import { File, Github, Linkedin } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 import { AboutCard } from "@/components/SectionCards";
 import { ButtonLink } from "@/components/CustomButtons";
 import Section from "@/components/Sections";
@@ -92,12 +92,6 @@ const Socials = () => {
             content="GitHub"
             link="https://github.com/TerenceCLZhang"
             icon={<Github />}
-            newTab={true}
-          />
-          <ButtonLink
-            content="CV / Résumé"
-            link="/TerenceZhangCV.pdf"
-            icon={<File />}
             newTab={true}
           />
         </div>

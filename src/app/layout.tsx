@@ -28,13 +28,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${inter.variable} ${calistoga.variable} scrollbar`}
-    >
+    <html lang="en" className={`${inter.variable} ${calistoga.variable}`}>
       <body className="bg-gray-900 text-white antialiased">
         <GoogleReCaptchaWrapper>{children}</GoogleReCaptchaWrapper>
-        <GoogleAnalytics gaId="G-J8TQVF4EVX"/>
+        <GoogleAnalytics gaId="G-J8TQVF4EVX" />
         <Toaster />
       </body>
     </html>
