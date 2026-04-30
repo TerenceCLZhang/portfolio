@@ -1,10 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@plugin 'tailwind-scrollbar' {
-  nocompatible: true;
-}
-
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -161,10 +157,6 @@
 }
 
 @layer utilities {
-  .scrollbar {
-    @apply scrollbar-thumb-primary scrollbar-thumb-rounded-full;
-  }
-
   .grecaptcha-badge {
     @apply !invisible;
   }

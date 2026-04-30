@@ -1,5 +1,50 @@
 [
   {
+    "emoji": "💬",
+    "title": "LinkUp",
+    "image": "/projects/linkup.png",
+    "techStack": [
+      "MongoDB",
+      "Express.js",
+      "React",
+      "Node.js",
+      "Socket.io",
+      "Tailwind CSS",
+      "React Router",
+      "Zustand",
+      "JWT"
+    ],
+    "description": [
+      "A full-stack real-time chat application with one-on-one and group messaging with media sharing and emojis",
+      "Implemented secure user authentication with JWT, email verification, and password reset features",
+      "Real-time user presence, notification sounds, and persistent unread message counts for seamless engagement."
+    ],
+    "githubLink": "https://github.com/TerenceCLZhang/linkup",
+    "liveLink": "https://linkup-ozf3.onrender.com/"
+  },
+  {
+    "emoji": "📍",
+    "title": "Pinfinity",
+    "image": "/projects/pinfinity.png",
+    "techStack": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "ShadCN",
+      "Prisma",
+      "Better Auth",
+      "MongoDB",
+      "Cloudflare R2"
+    ],
+    "description": [
+      "A full-stack Pinterest clone with secure user authentication, responsive design, and searching and sorting functionalities",
+      "Complete CRUD functionality for creating, viewing, editing, and deleting pins",
+      "Social features including the ability to like pins and follow users"
+    ],
+    "githubLink": "https://github.com/TerenceCLZhang/pinfinity",
+    "liveLink": "https://pinfinity-terenceclzhang.vercel.app/"
+  },
+  {
     "emoji": "🌍",
     "title": "Where in the World?",
     "image": "/projects/where_in_the_world.png",
@@ -18,45 +63,6 @@
     ],
     "githubLink": "https://github.com/TerenceCLZhang/rest-countries-api-web-app",
     "liveLink": "https://terenceclzhang-rest-countries.netlify.app/"
-  },
-  {
-    "emoji": "📍",
-    "title": "IP Address Tracker",
-    "image": "/projects/ip_address_tracker.png",
-    "techStack": [
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Redux",
-      "Leaflet",
-      "IPWhoIs API"
-    ],
-    "description": [
-      "Search for any valid IPv4 or IPv6 address",
-      "Access detauked information including location, timezone, and ISP",
-      "View its location on an interactive map integrated with Leaflet and Google Maps"
-    ],
-    "githubLink": "https://github.com/TerenceCLZhang/ip-address-tracker",
-    "liveLink": "https://terenceclzhang-ip-address-tracker.netlify.app/"
-  },
-  {
-    "emoji": "⛅",
-    "title": "GlobeWeather",
-    "image": "/projects/globeweather.png",
-    "techStack": [
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Redux",
-      "OpenWeatherMap API"
-    ],
-    "description": [
-      "Search any city worldwide with autocomplete suggestions",
-      "Contains real-time weather data including temperature, wind speed, and humidity, provided by the OpenWeatherMap API",
-      "Dynamic backgrounds and unit toggle for metric/imperial measurements"
-    ],
-    "githubLink": "https://github.com/TerenceCLZhang/GlobeWeather",
-    "liveLink": "https://terenceclzhang-globeweather.netlify.app/"
   },
   {
     "emoji": "🤖",
