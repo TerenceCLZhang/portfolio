@@ -9,7 +9,7 @@ const Footer = () => {
       <Separator className="bg-gray-500" />
       <div className="flex flex-col gap-5 md:flex-row items-center justify-between">
         <p className="text-gray-400 text-center">
-          &copy; Copyright 2025 Terence Zhang. All rights reserved.
+          &copy; Copyright 2026 Terence Zhang. All rights reserved.
         </p>
         <div className="space-x-3">
           <Button asChild size="icon">
